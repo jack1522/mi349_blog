@@ -1,11 +1,20 @@
+html{
+    background: whitesmoke;
+}
 body {
-    margin: 0;
-    font-family:  Helvetica;
+    margin: 40px;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 18px;
+    margin:40px;
+    padding: 10px;
+    border-bottom:10px solid rgb(231, 126, 200) ;
+    background-color: rgb(214, 211, 211);
   }
-  
+
   .topnav {
     overflow: hidden;
     background-color: rgb(231, 126, 200);
+
   }
   
   .topnav a {
@@ -25,4 +34,25 @@ body {
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
+  }
+
+  #blog{
+      border-top: 3px solid rgb(231, 126, 200);
+
+  }
+  .blog-post{
+      border-bottom: 4px  solid #ccc;
+   
+
+  }
+
+  [title~="msupic"] {
+    border: 12px solid green;
+  }
+
+  [title~="airbnb"] {
+    border: 12px solid white;
+  }
+  [title~="safespace"] {
+    border: 12px solid rgb(61, 26, 255);
   }
