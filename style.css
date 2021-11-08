@@ -1,5 +1,6 @@
 html{
     background: whitesmoke;
+    
 }
 body {
     margin: 40px;
@@ -14,6 +15,9 @@ body {
   .topnav {
     overflow: hidden;
     background-color: rgb(231, 126, 200);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 
   }
   
@@ -36,15 +40,34 @@ body {
     color: white;
   }
 
+  
+ 
+  
   #blog{
       border-top: 3px solid rgb(231, 126, 200);
+      background: rgb(168, 168, 168);
+      display:flex;
 
   }
   .blog-post{
       border-bottom: 4px  solid #ccc;
-   
+      padding: 75px;
+      margin: 10px;
+       
+  }
+
+  .blog-post:nth-of-type(1){
+      flex:2 ;
 
   }
+  .blog-post:nth-of-type(2){
+    flex:3 ;
+}
+.blog-post:nth-of-type(3){
+    flex:2 ;
+      
+}
+
 
   [title~="msupic"] {
     border: 12px solid green;
@@ -56,3 +79,15 @@ body {
   [title~="safespace"] {
     border: 12px solid rgb(61, 26, 255);
   }
+  [title~="meetAuthor"] {
+    border: 7px solid rgb(243, 210, 60);
+  }
+  img {max-width:100%;}
+
+.img-cont{
+   float:right;
+   padding:2px;
+   margin: 2px;
+}
+input { margin-bottom: 10px;
+ }
